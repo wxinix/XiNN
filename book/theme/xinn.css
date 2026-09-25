@@ -1,0 +1,29 @@
+/* SPDX-License-Identifier: BSD-3-Clause */
+/* Small adjustments to mdBook's theme for the XiNN book. */
+
+/* A slightly wider page: the book has wide tables and code. */
+:root {
+    --content-max-width: 860px;
+}
+
+/* Tables: full width, compact, zebra rows. */
+.content table {
+    width: 100%;
+    font-size: 0.92em;
+}
+.content table td,
+.content table th {
+    padding: 4px 10px;
+}
+
+/* Screenshots: fit the page, with a subtle frame. */
+.content img {
+    max-width: 100%;
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+}
+
+/* Code: a touch smaller, so 90-column lines fit. */
+.content pre > code {
+    font-size: 0.86em;
+}

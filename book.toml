@@ -1,0 +1,38 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# The XiNN book as a website, built with mdBook (https://rust-lang.github.io/mdBook/).
+#
+#   mdbook build        -> build/book/index.html
+#   mdbook serve --open -> live preview while editing
+#
+# The chapters live in book/; book/SUMMARY.md is the table of contents.
+
+[book]
+title = "XiNN: A Mini Deep Learning Framework in C++26"
+description = "手搓 a C++ deep learning framework from scratch with the latest modern C++, with examples from traffic flow theory."
+authors = ["Wuping Xin"]
+language = "en"
+src = "book"
+
+[build]
+build-dir = "build/book"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/wxinix/XiNN"
+git-repository-icon = "fab-github"
+edit-url-template = "https://github.com/wxinix/XiNN/edit/main/{path}"
+site-url = "/XiNN/"
+additional-css = ["book/theme/xinn.css"]
+no-section-label = true
+
+[output.html.search]
+enable = true
+limit-results = 20
+
+[output.html.print]
+enable = true
+
+[output.html.fold]
+enable = true
+level = 1

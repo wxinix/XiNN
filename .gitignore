@@ -1,0 +1,10 @@
+build/
+.idea/
+cmake-build-*/
+_book/
+*.exe
+*.o
+*.pdf
+data/
+car_following_out/
+imgui.ini
